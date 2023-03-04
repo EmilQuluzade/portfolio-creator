@@ -19,3 +19,73 @@ header {
     font-weight: 400;
 
 }
+
+.text-img h1 span {
+    color: #FF8A56;
+    ;
+}
+
+.text-img {
+    padding: 100px 113px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-img > .text > h1 {
+    font-size:  72px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.text-img > .text > p {
+    font-weight: 400;
+    line-height: 33px;
+    font-size: 22px;
+    color: #282A3A;
+    padding-top: 45px;
+    padding-bottom: 55px;
+}
+
+.text-img > .text > button {
+    background-color: #171717;
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+    padding: 17px 30px 23px;
+}
+
+.text-img > .text > a {
+    padding-left: 30px;
+}
+
+.text-img > .text > a {
+    text-decoration: none;
+    color: #171717;
+    font-size: 18px;
+}
+
+.header > .fa-bars {
+    font-size: 40px;
+    display: none;
+}
+
+@media (max-width:1000px) {
+    .header > .fa-bars {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+    }
+    
+    
+}
+
+@media (max-width:790px) {
+    .header {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
+
