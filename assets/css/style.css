@@ -1,10 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 @import url(reser-css.css);
 
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    /* outline: 1px solid red; */
+    
 
+}
 body {
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+
 }
+
+
+
 .nav-links a {
     text-decoration: none;
     color: black;
@@ -68,6 +80,21 @@ header {
 .header > .fa-bars {
     font-size: 40px;
     display: none;
+    cursor: pointer;
+}
+
+@media (max-width:1320px) {
+    .text-img {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width:1154px) {
+    .text-img {
+        display: block;
+        text-align: center;
+    }
 }
 
 @media (max-width:1000px) {
@@ -87,5 +114,107 @@ header {
         padding-left: 30px;
     }
 }
+
+.trustedby > h3 {
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.trustedby > .trustedby-logos {
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 288px 0;
+}
+
+@media (max-width:1315px) {
+    .trustedby > .trustedby-logos {
+        padding: 45px 150px 0
+    }
+    }
+
+@media (max-width:1015px) {
+    .trustedby > .trustedby-logos {
+        padding: 45px 40px 0
+    }
+}
+
+@media (max-width:765px) {
+    .trustedby > .trustedby-logos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .trustedby > .trustedby-logos > img {
+        width: 200px;
+        padding-bottom: 25px;
+        
+    }
+
+}
+
+.services > .header {
+   text-align: center;
+   padding-top: 178px;
+}
+.services > .header > h6 {
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 4px;
+    padding-bottom: 20px;
+    color:#FF5E69;
+    ;
+}
+
+.services > .header > h3 {
+    font-size: 54px;
+    font-weight: 700;
+}
+
+.services > .service-cards {
+    padding: 118px 230px 167px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.services > .service-cards h2 {
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 39px;
+    padding-bottom: 25px;
+}
+
+.services > .service-cards p {
+    font-weight: 400;
+    line-height: 24px;
+    color: #666;
+    padding-bottom: 21px;
+}
+
+.services > .service-cards li {
+    list-style: square;
+    list-style-position: inside;
+    line-height: 35px;
+    font-weight: 700;
+}
+
+@media (max-width:1610px) {
+    .services > .service-cards {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+}
+
+@media (max-width:1100px) {
+    .services > .service-cards {
+        display: block;
+        text-align: center;
+    }
+    .services > .service-cards > .service-card2 {
+        padding: 60px;
+    }
+}
+
+
 
 
