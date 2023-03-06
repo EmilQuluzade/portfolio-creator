@@ -95,6 +95,10 @@ header {
         display: block;
         text-align: center;
     }
+
+    .text-img > img {
+        padding-top: 100px;
+    }
 }
 
 @media (max-width:1000px) {
@@ -147,7 +151,7 @@ header {
     }
     .trustedby > .trustedby-logos > img {
         width: 200px;
-        padding-bottom: 25px;
+        padding-bottom: 40px;
         
     }
 
